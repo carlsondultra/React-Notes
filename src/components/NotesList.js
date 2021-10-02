@@ -5,7 +5,7 @@ const NotesList = ({ notes }) => {
         <div className="notes-list">
             {/* For each note, render a note component */}
             {notes.map((note) => (
-                <Note/>
+                <Note id={note.id} text={note.text} date={note.date} />
             ))}
         </div>
     )
