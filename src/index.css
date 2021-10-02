@@ -12,10 +12,20 @@ code {
     monospace;
 }
 
+/* having notes stay in the middle of the screen */
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+/*Preventing notes from hitting the edge of the screen */
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .notes-list{
   display: grid;
   grid-gap: 1rem;
-  /*Fitting as many columns in a row, resize within a given range */
+/*Fitting as many columns in a row, resize within a given range */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
