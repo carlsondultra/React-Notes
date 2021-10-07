@@ -1,10 +1,20 @@
+import { useState } from "react";
+
 const AddNote = () => {
+    const [noteText, setNoteText] = useState('');
+
+    const handleChange = (event) => {
+        console.log(event.target.value);
+    }
+
+
     return(
         <div className="note new">
             <textarea 
                 rows="8" 
                 cols="10" 
                 placeholder="Type to add..."
+                onChange={handleChange}
             ></textarea>    
             <div className="note-footer">
                 <small>100 Characters Remaining</small>
