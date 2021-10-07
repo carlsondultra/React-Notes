@@ -43,11 +43,17 @@ textarea:focus{
   outline: none;
 }
 
+/*Save Button*/
 .save{
   background-color: rgb(200, 204, 224);
   border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
+}
+
+.save:hover{
+  background-color:rgb(21, 255, 0);
+  cursor:pointer;
 }
 
 .note{
