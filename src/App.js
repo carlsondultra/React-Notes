@@ -37,6 +37,11 @@ const addNote = (text) => {
   setNotes(newNotes);
 }
 
+const deleteNote = (id) => {
+  const newNotes = notes.filter((note) => note.id !== id);
+  setNotes(newNotes);
+}
+
   return (
     <div className="container">
       <NotesList notes={notes} handleAddNote={addNote}/>
