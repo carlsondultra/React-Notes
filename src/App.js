@@ -49,7 +49,8 @@ const deleteNote = (id) => {
 }
 
   return (
-    <div className="container">
+    <div className={`${darkMode && 'dark-mode'}`}>
+      <div className="container">
       <Header handleToggleDarkMode={setDarkMode}/>
       <Search handleSearchNote={setSearchText}/>
       <NotesList 
@@ -58,7 +59,9 @@ const deleteNote = (id) => {
           )} 
         handleAddNote={addNote}
         handleDeleteNote={deleteNote}/>
+      </div>
     </div>
+    
   );
 };
 
